@@ -14,9 +14,6 @@
 #include <stdexcept>
 #include <typeinfo>
 
-    if (s.find("virginica")  != std::string::npos) return 2;
-    throw std::runtime_error("Unknown species: " + s);
-}
 
 // Reads CSV with columns: sepal_length,sepal_width,petal_length,petal_width,species
 // Produces row-major X (N*4) and one-hot Y (N*3)
