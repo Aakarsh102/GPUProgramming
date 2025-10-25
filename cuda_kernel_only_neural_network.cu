@@ -14,9 +14,6 @@
 #include <stdexcept>
 #include <typeinfo>
 
-static inline int species_to_idx(const std::string& s) {
-    if (s.find("setosa")     != std::string::npos) return 0;
-    if (s.find("versicolor") != std::string::npos) return 1;
     if (s.find("virginica")  != std::string::npos) return 2;
     throw std::runtime_error("Unknown species: " + s);
 }
